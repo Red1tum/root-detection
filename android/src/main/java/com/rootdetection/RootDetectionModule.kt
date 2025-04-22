@@ -1,20 +1,24 @@
 package com.rootdetection
 
+import android.util.Log
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.module.annotations.ReactModule
+import com.scottyab.rootbeer.RootBeer
 
 @ReactModule(name = RootDetectionModule.NAME)
 class RootDetectionModule(reactContext: ReactApplicationContext) :
   NativeRootDetectionSpec(reactContext) {
 
+  private val rootBeer = RootBeer(reactContext)
+
   override fun getName(): String {
     return NAME
   }
 
-  // Example method
-  // See https://reactnative.dev/docs/native-modules-android
-  override fun multiply(a: Double, b: Double): Double {
-    return a * b
+  override fun isRootDetected(): Boolean {
+    val isRooted = rootBeer.isRooted
+    Log.d("RootDetectionModule", "Is rooted: ${isRooted}")
+    return isRooted
   }
 
   companion object {
