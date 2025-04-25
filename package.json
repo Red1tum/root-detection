@@ -1,6 +1,6 @@
 {
   "name": "react-native-root-detection",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Detect root on user device",
   "source": "./src/index.tsx",
   "main": "./lib/module/index.js",
