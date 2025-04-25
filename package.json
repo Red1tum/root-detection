@@ -1,6 +1,6 @@
 {
   "name": "react-native-root-detection",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Detect root on user device",
   "source": "./src/index.tsx",
   "main": "./lib/module/index.js",
@@ -116,9 +116,7 @@
     },
     "plugins": {
       "@release-it/conventional-changelog": {
-        "preset": {
-          "name": "angular"
-        }
+        "ignoreRecommendedBump": true
       }
     }
   },

@@ -12,11 +12,19 @@ npm install react-native-root-detection
 
 
 ```js
-import { isRootDetected } from 'react-native-root-detection';
+import { isRootDetected, isDebuggable, isEmulator } from 'react-native-root-detection';
 
 // ...
 
+// Is device rooted or jailbreaked
 const isDeviceRooted = isRootDetected();
+
+// On Android: is application debuggable or is debugger connected to application
+// On iOS: is debugger attached to application
+const isDebuggable = isDebuggable();
+
+// Is application running on emulator/simulator
+const isRunningOnEmulator = isEmulator();
 ```
 
 ## License
