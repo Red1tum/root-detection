@@ -8,6 +8,6 @@ export function isEmulator(): boolean {
   return RootDetection.isEmulator();
 }
 
-export function isDebiggable(): boolean {
+export function isDebuggable(): boolean {
   return RootDetection.isDebuggable();
 }

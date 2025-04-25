@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import {
-  isDebiggable as isDebuggable,
+  isDebuggable,
   isEmulator,
   isRootDetected,
 } from 'react-native-root-detection';
